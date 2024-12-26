@@ -33,6 +33,21 @@ body {
     transition: .2s;
 }
 
+h2.title {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+h2.title span {
+    color: #cc0000;
+}
+
+
+button:hover {
+    box-shadow: 0px 0px 8px #f00303 ;
+    transform: scale(1.09);
+}
 /* HEADER STYLE */
 
 header {
@@ -67,10 +82,6 @@ header nav ul li {
 }
 
 
-.btn-contact button:hover {
-    box-shadow: 0px 0px 8px #f00303 ;
-    transform: scale(1.09);
-}
 
 /* TOP SITE STYLE */
 
@@ -114,3 +125,220 @@ section.site-top .flex {
         top: 44px
     }
 }
+
+/* SKILLS STYLE */
+
+section.skills {
+    padding: 40px 4%;
+}
+
+section.skills .flex {
+    gap: 60px;
+}
+
+.skills .skills-box {
+    color: #FFF;
+    padding: 40px;
+    border-radius: 30px;
+    margin-top: 46px;
+    transition: .2s;    
+}
+
+.skills .skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #cc000056;
+}
+
+.skills .skills-box i {
+    font-size: 68px;
+    color: #cc0000;
+}
+
+.skills .skills-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+
+}
+
+/* ABOUT STYLE */
+
+section.about {
+    padding: 80px 4%;
+}
+section.about .flex {
+    gap: 60px;
+}
+.about .txt-about {
+    color: #fff;
+}
+
+.about .txt-about h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.about .txt-about h2 span {
+    color: #cc0000;
+    display: block;
+}
+
+.about .txt-about p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about .txt-about .btn-social button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #cc0000;
+        font-size: 23px;
+        cursor: pointer;
+        margin: 0 4px;
+        transition: .2s;
+}
+
+
+/* PORTFOLIO STYLE */
+
+/* section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0c;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    position: relative;
+    border-radius: 40px;
+} */
+
+/* .img-port:hover {
+    background-position: 100% 100%;
+} */
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#000000f1;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #cc0000;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+} */
+
+
+
+/* skills page */
+
+.site-top-skills p {
+    color: white;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.site-top-skills {
+    padding-bottom: 100px;
+}
+
+
+/* FORMS */
+
+/* Estilos gerais do formulário */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo dos labels */
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  /* Estilo dos campos de entrada */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o botão de envio */
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo do botão de envio ao passar o mouse */
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para campos inválidos (quando não preenchidos corretamente) */
+  form input:invalid,
+  form textarea:invalid {
+    border-color: #e74c3c; /* Vermelho para campos inválidos */
+  }
+  
+  /* Estilo para campos válidos (quando o usuário preenche corretamente) */
+  form input:valid,
+  form textarea:valid {
+    border-color: #2ecc71; /* Verde para campos válidos */
+  }
+  
+  /* Estilo para campos obrigatórios que não foram preenchidos */
+  form input:required:invalid,
+  form textarea:required:invalid {
+    border-color: #cc0000; /* Vermelho para campos obrigatórios não preenchidos */
+  }
+  
+  /* Ajuste do padding e margin nos campos para consistência */
+  form input,
+  form textarea,
+  form button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  
