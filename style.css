@@ -266,6 +266,32 @@ section.portfolio .flex {
     padding-bottom: 100px;
 }
 
+/* ABOUT PAGE */
+
+.site-top-about {
+    padding-bottom: 100px;
+}
+.site-top-about p {
+    color: white;
+    text-align: center;
+    white-space: pre-line;
+  }
+
+.site-top-about h3 {
+    color: white;
+    font-size: 30;
+    text-align: center;
+    padding: 40px 4%;
+}
+
+.site-top-about h3 span {
+    color: #cc0000;
+}
+
+.site-top-about p span {
+    color: #cc0000;
+    font-weight: bold;
+}
 
 /* FORMS */
 
@@ -342,5 +368,7 @@ form {
     font-family: Arial, sans-serif;
     font-size: 14px;
   }
+  
+
   
   
