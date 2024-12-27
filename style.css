@@ -200,7 +200,9 @@ section.about .flex {
         transition: .2s;
 }
 
-
+.img-about img {
+    border-radius: 3%;
+}
 /* PORTFOLIO STYLE */
 
 /* section.portfolio {
