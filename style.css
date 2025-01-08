@@ -260,10 +260,37 @@ section.portfolio .flex {
     color: white;
     text-align: center;
     white-space: pre-line;
+    padding: 10px;
+}
+
+.site-top-skills p  .nivel-avancado{
+    color: #cc0000;
+}
+.site-top-skills p  .nivel-intermediario{
+    color: #becc00d2;
+}
+.site-top-skills p  .nivel-basico{
+    color: #41cc00d2;
 }
 
 .site-top-skills {
     padding-bottom: 100px;
+}
+
+.site-top-skills h2.title {
+    padding: 10px 20px;
+}
+
+
+.site-top-skills h3 {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+.site-top-skills h3 span {
+    color: #cc0000;
 }
 
 /* ABOUT PAGE */
@@ -372,7 +399,7 @@ form {
 
   /* RESPONSIVO */
 
-@media screen and (max-width:1030px) {
+@media screen and (max-width:1050px) {
     /* CLASSES GERAIS */
     .flex {
         flex-direction: column;
@@ -422,6 +449,13 @@ form {
     .img-about img {
         width: 100%;
     }
+    .site-top-about p {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        white-space: pre-line;
+        padding: 50px 4%;
+      }
+
 }
 
 
