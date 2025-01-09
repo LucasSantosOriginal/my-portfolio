@@ -1,0 +1,207 @@
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+P {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACK ARROW */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    z-index: 10; /* Certifique-se de que está acima de tudo */
+    display: flex;
+    align-items: center;
+}
+
+/* TECLA PARA INICIAR */
+.mensagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.918);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 20;
+    display: none; 
+}
+
+/* Estilo da seta de "back" */
+.back-arrow {
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    transition: color 0.3s ease;
+}
+
+.back-arrow:hover {
+    color: #ffffff; /* Cor ao passar o mouse */
+}
+
+
+/* GAME BOARD */
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #03e70e;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB,#E0F6FF );
+}
+
+/* PIPE */
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* MARIO GIF*/
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+/* CLOUDS */
+
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+/* WALTER */
+
+.walter {
+    position: absolute;
+    width: 150px;
+    display: none; /* Invisível por padrão */
+    top: 30%;
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+    z-index: 100; 
+}
+
+
+
+/* SPIDER */
+.spider {
+    position: absolute;
+    width: 150px;
+    top: -10px;
+    animation: spider-animation 10s infinite linear;
+    animation-delay:5s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes spider-animation {
+    from {
+        right: -1050px;
+        opacity: 1; 
+    }
+    to {
+        right: 100%;
+        opacity: 1;
+    }
+}
+
+/* MONEY */
+
+.money {
+    position: absolute;
+    width: 50px;
+    animation: money-animation 40s infinite linear;
+    top: 30%;
+}
+
+@keyframes money-animation {
+    from {
+        left: -950px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+
+/* KAYLE */
+
+.kayle {
+    position: absolute;
+    top: 50%;
+    width: 550px;
+    animation: kayle-animation 20s infinite linear;
+}
+
+@keyframes kayle-animation {
+    from {
+        left: -1950px;
+    }
+    to {
+        left: 100%;
+    }
+}

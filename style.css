@@ -526,3 +526,21 @@ form {
 }
 
 
+/* PROJETOS PAGINA */
+
+.projetos {
+    margin: 40px 4%;
+    
+}
+.projetos a {
+    text-decoration: none;
+    background-color:#cc0000;
+    color: white;
+    padding: 10px 4%;
+    border-radius: 5px;
+}
+
+.projetos a:hover {
+    background-color: #FFF;
+    color: #cc0000;
+}
