@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
 /* Geral Style */
 * {
     margin: 0;
@@ -530,17 +530,70 @@ form {
 
 .projetos {
     margin: 40px 4%;
+    display: flex;
+    flex-direction: column; /* Organiza-os em coluna */
+    align-items: center; /* Centraliza no meio da tela */
+    gap: 15px; /* Adiciona espaçamento entre os botões */
+    margin-top: 20px; /* Ajusta a margem superior */
     
 }
 .projetos a {
-    text-decoration: none;
-    background-color:#cc0000;
-    color: white;
-    padding: 10px 4%;
-    border-radius: 5px;
+    display: inline-block; /* Permite ajustar tamanho */
+    background-color: #cc0000; /* Cor do botão */
+    color: #fff; /* Texto branco */
+    font-size: 1rem; /* Ajusta tamanho da fonte */
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none; /* Remove sublinhado */
+    transition: 0.3s ease-in-out;
+    width: 500px; /* Define um tamanho fixo */
+    text-align: center;
 }
 
 .projetos a:hover {
-    background-color: #FFF;
-    color: #cc0000;
+    background-color: #a30000; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve crescimento */
+}
+
+/* PAGINA CURRICULO */
+
+.curriculo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.curriculo h1 {
+    font-size: 2rem;
+    color: #dfdfdf;
+    margin-bottom: 20px;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+
+}
+
+.curriculo a {
+    text-decoration: none;
+}
+
+.curriculo button {
+    background-color: #cc0000;
+    color: #fff;
+    width: 300px;
+    font-size: 20px;
+    
+    font-weight: bold;
+    padding: 12px 34px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.curriculo button:hover {
+    background-color: #a30000;
+    transform: scale(1.05);
+}
+
+.curriculo .bi bi-download {
+    padding: 100px;
 }
