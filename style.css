@@ -160,6 +160,23 @@ section.skills .flex {
 
 }
 
+.dev-skill a {
+    text-decoration: none;
+    color: white;
+}
+
+.dev-skill a:hover {
+    color: #cc0000;
+}
+
+.prod-skill a {
+    text-decoration: none;
+    color: white;
+}
+
+.prod-skill a:hover {
+    color: #cc0000;
+}
 /* ABOUT STYLE */
 
 section.about {
