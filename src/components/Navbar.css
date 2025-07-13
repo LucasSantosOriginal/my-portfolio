@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;          /* centraliza horizontalmente */
+    transform: translateX(-50%);  /* compensa a metade da largura */
+    width: auto;        
+    padding: 0.5rem 1rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  .navbar a {
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .navbar a:focus {
+    outline: none;
+  }
+  .nav-icon {
+    width: 200px;
+    cursor: pointer;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+  }
+  
+  .nav-icon:hover {
+    transform: scale(1.1);
+  }
+  
